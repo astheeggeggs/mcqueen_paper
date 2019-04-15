@@ -7,13 +7,14 @@
 * **Figure 2**: Simulation results summary; Inference results for Simulation studies 1 and 2.
   - TO DO
 * **Figure 3**: Drug associated selection analysis; Protease results summary.
-  - TO DO
+  - Raw output from MCMC run: `mcmc_output_files/Drug_inference/{protease,reverse_transcriptase}_drugs_combined_{window,log}.txt.zip`
+  - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/Drug_inference/{protease,reverse_transcriptase}_drugs.Rdata`
 * **Figure 4**: Selected results summaries.
-  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - Rdata file, in nicer array format: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
+  - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 5**:  HLA-B associated selection in reverse transcriptase.
-  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 
 ### Tables
 * Table 1: Data used in this study:  public databases.
@@ -21,16 +22,17 @@
 * Table 2: Data used in this study: viral sequence data with associated host HLA information.
   - N/A
 * Table 3: Drug associated selection analysis: sensitivity of inference.
-  - TO DO
+  - Raw output from MCMC run: `mcmc_output_files/Drug_inference/{protease,reverse_transcriptase}_drugs_combined_{window,log}.txt.zip`
+  - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/Drug_inference/{protease,reverse_transcriptase}_drugs.Rdata`
 * Table 4: Overlap between sites under selection and known HLA epitopes.
   - Raw output from MCMC run: `mcmc_output_files/{protease, reverse_transcriptase}_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/{protease, reverse_transcriptase}_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/{protease, reverse_transcriptase}_combined_subtype_{B,C}_ref.Rdata`.
 * Table 5: Codons in reverse transcriptase showing evidence for HLA associated selection. 
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * Table 6: Codons in protease showing evidence for HLA associated selection. 
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
 
 ## Supplementary Materials
 ### Figures
@@ -45,7 +47,7 @@
   - .Rdata file, in nicer array format: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 5**:  Simulation Study 1: comparison of estimates obtained using the closest 100 sequences by Hamming distance to the sequences actually copied from in the simulation, _r_= 0.05. 
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 6**: Simulation Study 2: parameter estimates.  
   - TO DO
 * **Figure 7**: Simulation Study 2: sample size of 3000, results summary.
@@ -64,19 +66,19 @@
   - TO DO
 * **Figure 14**: Summary of HLA-A associated selection in protease. 
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 15**: Summary of HLA-B associated selection in protease. 
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 16**: Summary of HLA-C associated selection in protease. 
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 17**: Summary of HLA-A associated selection in reverse transcriptase.
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 18**: Summary of HLA-C associated selection in reverse transcriptase.
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 19**: Estimated recombination probabilities between sites across protease and reverse transcriptase.
   - TO DO
 * **Figure 20**: The impact of HLA alleles on differentiation between HIV-1 subtypes.
@@ -91,11 +93,11 @@
   - N/A
 * **Table 4**: The collection of top-tier and second-tier sites in protease.
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
   - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
 * **Table 5**: The collection of top-tier and second-tier sites in reverse transriptase.
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - .Rdata file, in nicer array format, with HLA labels and removal of burnin: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
+  - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
   - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
 * **Table 6**: Overlap between studies, protease.
   - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
