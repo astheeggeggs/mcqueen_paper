@@ -1,5 +1,11 @@
 # Raw data and MCMC output underlying plots and results in the McQueen paper
 
+## Reference datasets *D*<sub>B</sub>
+The combination of sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database used for our reference dataset at the time of performing inference is here:
+* `Reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta`
+The viral sequence data used for drug associated selection inference in the paper is here:
+* `Reference_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+
 ## Main Text
 ### Figures
 * **Figure 1**: The underlying process and our approximation.
@@ -10,10 +16,10 @@
   - Raw output from MCMC run: `mcmc_output_files/Drug_inference/protease_drugs_combined_{window,log}.txt.zip`
   - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/Drug_inference/protease_drugs.Rdata`
 * **Figure 4**: Selected results summaries.
-  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
+  - Raw output from MCMC run: `mcmc_output_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
   - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 * **Figure 5**:  HLA-B associated selection in reverse transcriptase.
-  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
+  - Raw output from MCMC run: `mcmc_output_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window,log}.txt.zip`.
   - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 
 ### Tables
@@ -91,7 +97,7 @@
   - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/Drug_inference/reverse_transcriptase_drugs.Rdata`
 * Table 4: Overlap between sites under selection and known HLA epitopes.
 * **Figure 13**: Hierarchical clustering of drug selection profiles.
-  - TO DO
+  - `Rdata_files/Drug_inference/{protease,reverse_transcriptase}_drugs.Rdata`
 * **Figure 14**: Summary of HLA-A associated selection in protease. 
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
   - .Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
@@ -110,7 +116,7 @@
 * **Figure 19**: Estimated recombination probabilities between sites across protease and reverse transcriptase.
   - `mcmc_output_files/{protease,reverse_transcriptase}_combined_subtype_{B,C}_ref_combined_log.txt.zip`.
 * **Figure 20**: The impact of HLA alleles on differentiation between HIV-1 subtypes.
-  - TO DO
+  - `Rdata_files/HLA_inference/{protease,reverse_transcriptase}_selection_list_all_HLA.Rdata`
 
 ### Tables
 * **Table 1**: Priors on parameters of the model.
