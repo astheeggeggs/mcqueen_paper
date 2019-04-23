@@ -1,10 +1,18 @@
 # Raw data and MCMC output underlying plots and results in the McQueen paper
 
 ## Reference datasets *D*<sub>B</sub>
-The combination of sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database used for our reference dataset at the time of performing inference is here:
-* `Reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta`
-The viral sequence data used for drug associated selection inference in the paper is here:
-* `Reference_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+The combination of sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database, run through our quality control pipeline and used for our reference dataset at the time of performing inference is here:
+* `reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta`
+
+The viral sequence data taken from the Stanford drug resistance database, run through our quality control pipeline and used for drug associated selection inference in the paper is here:
+* `reference_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+
+## Query datasets *D*
+The viral sequence data taken from the Stanford drug resistance database, run through our quality control pipeline and used for drug associated selection inference in the paper is here:
+* `query_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+
+Associated host drug regime information for these patients is here:
+* `csv_files/drug_regime_data/{protease,revesrse_transcriptase}_
 
 ## Main Text
 ### Figures
@@ -14,7 +22,7 @@ The viral sequence data used for drug associated selection inference in the pape
   - Rdata file containing median, mean, and quantiles displayed in Figure 2_a_ and 2_b_: `Rdata_files/simulation_study_1/dsim_closest_100_exp_omega_rec_0.Rdata`
   - Rdata file containing median, mean and quantiles displayed in Figure 2_c_: `Rdata_files/simulation_study_1/dsim_closest_100_exp_omega_rec_0_01.Rdata`
   - Rdata file containing median, mean and quantiles displayed in Figure 2_d_: `Rdata_files/simulation_study_2/dgen_sim_HLA_coeff.Rdata`
-  - Rdata files containing _p_ values, medians, or estimated selection coefficient information used to generate ROC curves: TODO
+  - Rdata files containing the 100 ROC curves for each independent run using the methods detailed in the paper, and the average ROC curve for each method: `Rdata_files/simulation_study_2/ROC_curves/data_for_ROC_curve_1460_leaves.Rdata`.
 * **Figure 3**: Drug associated selection analysis; Protease results summary.
   - Raw output from MCMC run: `mcmc_output_files/Drug_inference/protease_drugs_combined_{window,log}.txt.zip`
   - Rdata file, in nicer array format with removal of burn-in: `Rdata_files/Drug_inference/protease_drugs.Rdata`
@@ -26,7 +34,7 @@ The viral sequence data used for drug associated selection inference in the pape
   - Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
 
 ### Tables
-* Table 1: Data used in this study:  public databases.
+* Table 1: Data used in this study: public databases.
   - N/A
 * Table 2: Data used in this study: viral sequence data with associated host HLA information.
   - N/A
@@ -133,20 +141,52 @@ The viral sequence data used for drug associated selection inference in the pape
 * **Table 4**: The collection of top-tier and second-tier sites in protease.
   - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
   - Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
+  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
 * **Table 5**: The collection of top-tier and second-tier sites in reverse transriptase.
   - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
   - Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
+  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/reverse_transcriptase_selection_list_all_HLA.Rdata`.
 * **Table 6**: Overlap between studies, protease.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
+  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
   - Also, summarise where I got the Carlson information from.
 * **Table 7**: Overlap between studies, reverse transcriptase.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: TO DO.
-  - Also, summarise where I got the Carlson information from.
-* **Table 8**: Table of _p_-values for differences between _H_<sub>B</sub> and _H_<sub>C</sub>) associated  selection at sites that distinguish subtype B and subtype C in protease and reverse transcriptase.
+  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
+* **Table 8**: Table of _p_-values for differences between _H_<sub>B</sub> and _H_<sub>C</sub>) associated selection at sites that distinguish subtype B and subtype C in protease and reverse transcriptase.
   - TO DO
 * **Table 9**: Summary of reference datasets for simulation study 3.
   - As in Supplementary Figure 9.
+
+## Source datafile - to be available for download with manuscript.
+These will be reduced in size so that they may be downloaded from the journal website and provide sufficient data to recreate the various plots.
+
+## Main text
+* **Figure 2** 
+* **Figure 3** `source_data_files/Figure_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug, and the median omega.
+* **Figure 4** `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 5** `source_data_files/Figure_5.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Table 3**
+* **Table 4**
+
+## Supplementary Materials
+* **Figure 2** 
+* **Figure 3** 
+* **Figure 5** 
+* **Figure 6** 
+* **Figure 7** 
+* **Figure 8** 
+* **Figure 9** 
+* **Figure 10** 
+* **Figure 11**
+* **Figure 12** `source_data_files/Supplementary_Figure_12.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug.
+* **Figure 13**
+* **Figure 14** `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 15** `source_data_files/Supplementary_Figure_15.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 16** `source_data_files/Supplementary_Figure_16.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 17** `source_data_files/Supplementary_Figure_17.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 18** `source_data_files/Supplementary_Figure_18.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
+* **Figure 19**
+* **Figure 20**
+
+
 
 
