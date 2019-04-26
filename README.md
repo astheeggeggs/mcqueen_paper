@@ -164,29 +164,78 @@ These will be reduced in size so that they may be downloaded from the journal we
 * **Figure 3** `source_data_files/Figure_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug, and the median omega.
 * **Figure 4** `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 5** `source_data_files/Figure_5.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
-* **Table 3**
-* **Table 4**
 
 ## Supplementary Materials
-* **Figure 2** 
-* **Figure 3** 
-* **Figure 5** 
+* **Figure 2** `source_data_files/Supplementary_Figure_2.Rdata` contains the following information for simulation study 1 with recombination probability set to 0 between neighbouring sites and using the closest 100 reference samples by Hamming distance:
+  * `truth`: a list consisting of the true underlying host associated selection parameters (`HLA_esc_truth`) and reversion parameters `rev_truth`.
+  * `omega_truth`: the true underlying dN/dS ratio for the codon model, for one of the 100 independent runs.
+  * `omega_mean`: the mean dN/dS estimates for one of the 100 independent runs.
+  * `omega_median`: the median dN/dS estimates for one of the 100 independent runs.
+  * `omega_credible_95`: the 95% credible interval for dN/dS estimates for one of the 100 independent runs.
+  * `omega_credible_50`: the 50% credible interval for dN/dS estimates for one of the 100 independent runs.
+  * `R_truth`: the true underlying recombination probability between adjacent sites for the simulation study.
+  * `mean_R`: the mean estimate of recombination between adjacent sites.
+  * `median_R`: the median estimate of recombination between adjacent sites.
+  * `credible_95_R`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_R`: the average 50% credible interval across the 100 independent runs.
+  * `mean_escape`: the mean host associated selection estimates.
+  * `median_escape`: the median host associated selection estimates.
+  * `coverage_95_escape`: the coverage of the 95% credible interval across the 100 independent runs.
+  * `coverage_50_escape`: the coverage of the 50% credible interval across the 100 independent runs.
+  * `credible_95_escape`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_escape`: the average 50% credible interval across the 100 independent runs.
+  * `mean_reversion`: the mean reversion estimates at each site.
+  * `median_reversion`: the median reversion estimates at each site.
+  * `coverage_95_reversion`: the coverage of the 95% credible interval across the 100 independent runs.
+  * `coverage_50_reversion`: the coverage of the 50% credible interval across the 100 independent runs.
+  * `credible_95_reversion`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_reversion`: the average 50% credible interval across the 100 independent runs.
+* **Figure 3** `source_data_files/Supplementary_Figure_3.Rdata` contains lists of information for output from simulation study 1:
+  * `closest_10_R_0` 
+  * `closest_100_R_0`
+  * `closest_10_R_0_01`
+  * `closest_100_R_0_01`
+Each contains the information as in `source_data_files/Supplementary_Figure_2.Rdata`.
+* **Figure 4** `source_data_files/Supplementary_Figure_4.Rdata` contains the information as in `source_data_files/Supplementary_Figure_2.Rdata` for simulation study 1 with recombination probability set to 0.01 between neighbouring sites and using the closest 100 reference samples by Hamming distance.
+* **Figure 5** `source_data_files/Supplementary_Figure_5.Rdata` contains two lists of information for output from simulation study 1 with recombination probability set to 0.05 between neighbouring sites:
+  * `closest_100_R_0_05`
+  * `closest_100_R_0_05_actually_copied_from`
+Each contains the information as in `source_data_files/Supplementary_Figure_2.Rdata`.
 * **Figure 6** 
-* **Figure 7** 
-* **Figure 8** 
-* **Figure 9** 
-* **Figure 10** 
-* **Figure 11**
+* **Figure 7** `source_data_files/Supplementary_Figure_7.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 3000 leaves.
+* **Figure 8** `source_data_files/Supplementary_Figure_8.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 1460 leaves.
+* **Figure 9** `source_data_files/Supplementary_Figure_9.Rdata` contains a collection of lists:
+  * `our_reference_set`: All available sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database.
+  * `our_reference_set_LOO`: All available sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database, plus all query sequences using a leave one out approach.
+  * `los_alamos_reference_set`: Restrict to only Los Alamos sequence data in the reference dataset.
+  * `los_alamos_reference_set_LOO`: Restrict to only Los Alamos sequence data in the reference dataset, plus all query sequences using a leave one out approach.
+  * `los_alamos_reference_set_remove_botswana`: Restrict to only Los Alamos sequence data in the reference dataset and remove all sequences sampled from Botswana.
+  * `los_alamos_reference_set_remove_botswana_LOO`: Restrict to only Los Alamos sequence data in the reference dataset and remove all sequences sampled from Botswana and include all query sequences using a leave one out approach.
+  * `only_queries`: Use query sequences as the reference dataset using a leave one out approach.
+  * `gold_standard_reference_set`: Use the sequences actually copied from as the reference dataset.
+Each list contains the following data:
+  * `median_escape`: The median escape estimates across the runs site by site for each HLA.
+  * `coverage_50_escape`: The coverage of the 50% credible invervals site by site for each HLA.
+  * `coverage_95_escape`: The coverage of the 95% credible intervals site by site for each HLA.
+  * `RMSE`: The root mean squared error site by site for each HLA.
+In addition, there is also `HLA_truth` which contains the true underlying selection coefficients for the parametric bootstrap.
+* **Figure 10** `source_data_files/Supplementary_Figure_10.Rdata` contains the same information as in `source_data_files/Supplementary_Figure_9.Rdata`.
+* **Figure 11** `source_data_files/Supplementary_Figure_11.Rdata` contains the same information as in `source_data_files/Supplementary_Figure_9.Rdata`.
 * **Figure 12** `source_data_files/Supplementary_Figure_12.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug.
-* **Figure 13**
+* **Figure 13** `source_data_files/Supplementary_Figure_13.Rdata` contains `drug_selection_median`; the median drug associated selection coefficients, and `trees`; native `ape` format (requires the R library `ape`) for the trees determined using `hclust`.
 * **Figure 14** `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 15** `source_data_files/Supplementary_Figure_15.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 16** `source_data_files/Supplementary_Figure_16.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 17** `source_data_files/Supplementary_Figure_17.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 18** `source_data_files/Supplementary_Figure_18.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
-* **Figure 19**
-* **Figure 20**
-
-
-
-
+* **Figure 19** `source_data_files/Supplementary_Figure_19.Rdata` contains the mean, median, 2.5%, 25%, 75%, and 97.5% quantiles for probability of recombination between adjacent sites in protease and reverse transcriptase, away from subtype B and subtype C consensus viral sequence.
+* **Figure 20** `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus:
+  * `log_protease_from_B_by_subtype_B`: log base 10 of selection away from subtype B protease consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_protease_from_B_by_subtype_C`: log base 10 of selection away from subtype B protease consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
+	* `log_protease_from_C_by_subtype_B`: log base 10 of selection away from subtype C protease consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_protease_from_C_by_subtype_C`: log base 10 of selection away from subtype C protease consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
+  * `log_RT_from_B_by_subtype_B`: log base 10 of selection away from subtype B reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_RT_from_B_by_subtype_C`: log base 10 of selection away from subtype B reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
+	* `log_RT_from_C_by_subtype_B`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_RT_from_C_by_subtype_C`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
+We also included the collection of sites that differ between subtype B and subtype C in reverse transcriptase: `B_C_diffs_protease`, `B_C_diffs_RT`.
