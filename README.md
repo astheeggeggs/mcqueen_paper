@@ -232,10 +232,10 @@ In addition, there is also `HLA_truth` which contains the true underlying select
 * **Figure 20** `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus:
   * `log_protease_from_B_by_subtype_B`: log base 10 of selection away from subtype B protease consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
   * `log_protease_from_B_by_subtype_C`: log base 10 of selection away from subtype B protease consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
-	* `log_protease_from_C_by_subtype_B`: log base 10 of selection away from subtype C protease consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_protease_from_C_by_subtype_B`: log base 10 of selection away from subtype C protease consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
   * `log_protease_from_C_by_subtype_C`: log base 10 of selection away from subtype C protease consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
   * `log_RT_from_B_by_subtype_B`: log base 10 of selection away from subtype B reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
   * `log_RT_from_B_by_subtype_C`: log base 10 of selection away from subtype B reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
-	* `log_RT_from_C_by_subtype_B`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
+  * `log_RT_from_C_by_subtype_B`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
   * `log_RT_from_C_by_subtype_C`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
 We also included the collection of sites that differ between subtype B and subtype C in reverse transcriptase: `B_C_diffs_protease`, `B_C_diffs_RT`.
