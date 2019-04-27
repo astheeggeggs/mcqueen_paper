@@ -12,7 +12,7 @@ The viral sequence data taken from the Stanford drug resistance database, run th
 * `query_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta.zip`
 
 Associated host drug regime information for these patients is here:
-* `csv_files/Drug_regime_data/{protease,reverse_transcriptase}_drugs.csv
+* `csv_files/Drug_regime_data/{protease,reverse_transcriptase}_drugs.csv`
 
 ## Main Text
 ### Figures
