@@ -227,7 +227,7 @@ These will be small in filesize so that they may be downloaded from the journal 
   * `closest_100_R_0_05_actually_copied_from`: simulation study 1 with recombination probability set to 0 between neighbouring sites and using the reference sequences actually copied from to generate the query sequences.
   
   Each contains the information as in `source_data_files/Supplementary_Figure_2.Rdata`.
-* **Figure 6** `source_data_files/Supplementary_Figure_6.Rdata` contains the information as in source_data_files/Supplementary_Figure_2.Rdata for simulation study 2 (simulating data under a birth-death process) and using the closest 100 reference samples by Hamming distance.
+* **Figure 6** `source_data_files/Supplementary_Figure_6.Rdata` contains the information as in  `source_data_files/Supplementary_Figure_2.Rdata` for simulation study 2 (simulating data under a birth-death process) and using the closest 100 reference samples by Hamming distance.
 * **Figure 7** `source_data_files/Supplementary_Figure_7.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 3000 leaves.
 * **Figure 8** `source_data_files/Supplementary_Figure_8.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 1460 leaves.
 * **Figure 9** `source_data_files/Supplementary_Figure_9.Rdata` contains a collection of lists:
