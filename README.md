@@ -9,7 +9,7 @@ The viral sequence data taken from the Stanford drug resistance database, run th
 
 ## Query datasets *D*
 The viral sequence data taken from the Stanford drug resistance database, run through our quality control pipeline and used for drug associated selection inference in the paper is here:
-* `query_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta.zip`
+* `query_datasets/Drug_inference/{protease,reverse_transcriptase}_queries.fasta.zip`
 
 Associated host drug regime information for these patients is here:
 * `csv_files/Drug_regime_data/{protease,reverse_transcriptase}_drugs.csv`
