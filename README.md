@@ -160,7 +160,51 @@ Associated host drug regime information for these patients is here:
 These will be reduced in size so that they may be downloaded from the journal website and provide sufficient data to recreate the various plots.
 
 ## Main text
-* **Figure 2** 
+* **Figure 2** `source_data_files/Figure_2.Rdata` is a list containing all the informatio to create Figure 2. The list has a collection of sublists:
+  * `simulation_study_1_closest_100_R_0`: information for simulation study 1 with the recombination rate between neighbouring sites set to 0 and using the closest 100 sequences by Hamming distance as references.
+  * `simulation_study_1_closest_100_R_0_01`: information for simulation study 1 with the recombination rate between neighbouring sites set to 0.01 and using the closest 100 sequences by Hamming distance as references.
+  * `simulation_study_2`: information for simulation study 2 estimations after simulating under a birth-death process.
+  * `simulation_study_2_ROC`: ROC curve information.
+Each of the first three lists consists of the following entries:
+  * `truth`: a list consisting of the true underlying host associated selection parameters (`HLA_esc_truth`) and reversion parameters `rev_truth`.
+  * `omega_truth`: the true underlying dN/dS ratio for the codon model, for one of the 100 independent runs.
+  * `omega_mean`: the mean dN/dS estimates for one of the 100 independent runs.
+  * `omega_median`: the median dN/dS estimates for one of the 100 independent runs.
+  * `omega_credible_95`: the 95% credible interval for dN/dS estimates for one of the 100 independent runs.
+  * `omega_credible_50`: the 50% credible interval for dN/dS estimates for one of the 100 independent runs.
+  * `R_truth`: the true underlying recombination probability between adjacent sites for the simulation study.
+  * `mean_R`: the mean estimate of recombination between adjacent sites.
+  * `median_R`: the median estimate of recombination between adjacent sites.
+  * `credible_95_R`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_R`: the average 50% credible interval across the 100 independent runs.
+  * `mean_escape`: the mean host associated selection estimates.
+  * `median_escape`: the median host associated selection estimates.
+  * `coverage_95_escape`: the coverage of the 95% credible interval across the 100 independent runs.
+  * `coverage_50_escape`: the coverage of the 50% credible interval across the 100 independent runs.
+  * `credible_95_escape`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_escape`: the average 50% credible interval across the 100 independent runs.
+  * `mean_reversion`: the mean reversion estimates at each site.
+  * `median_reversion`: the median reversion estimates at each site.
+  * `coverage_95_reversion`: the coverage of the 95% credible interval across the 100 independent runs.
+  * `coverage_50_reversion`: the coverage of the 50% credible interval across the 100 independent runs.
+  * `credible_95_reversion`: the average 95% credible interval across the 100 independent runs.
+  * `credible_50_reversion`: the average 50% credible interval across the 100 independent runs.
+The final list `simulation_study_2_ROC` consists of the following entries:
+  * bhattacharya_average: average ROC curve using the methods of [Bhattacharya _et_al._](https://science.sciencemag.org/content/sci/315/5818/1583.full.pdf).
+	* phyloD_average: average ROC curve using the methods of [Carlson _et al._](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000225&type=printable).
+  * phyloD_false_positive: rolling false positive rate as threshold is decreased.
+	* phyloD_true_positive: rolling true positive rate as threshold is decreased.
+	* phyloD_OR_average: average ROC curve using the methods of [Carlson _et al._](https://jvi.asm.org/content/jvi/86/9/5230.full.pdf).
+  * phyloD_OR_false_positive: rolling false positive rate as threshold is decreased.
+	* phyloD_OR_true_positive: rolling true positive rate as threshold is decreased.
+	* fishers_exact_average: average ROC curve using the methods of [Moore _et al._](https://science.sciencemag.org/content/sci/296/5572/1439.full.pdf).
+	* fryer_average: average ROC curve using the methods of [Fryer _et al._](https://journals.plos.org/plospathogens/article/file?id=10.1371/journal.ppat.1001196&type=printable).
+  * fryer_false_positive: rolling false positive rate as threshold is decreased.
+	* fryer_true_positive: rolling true positive rate as threshold is decreased.
+	* our_method_average: average ROC curve using our method, McQueen.
+	* our_false_positive: rolling false positive rate as threshold is decreased.
+	* our_true_positive: rolling true positive rate as threshold is decreased.
+  
 * **Figure 3** `source_data_files/Figure_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug, and the median omega.
 * **Figure 4** `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
 * **Figure 5** `source_data_files/Figure_5.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. Information is contained in named lists with 2 elements, one from subtype B consensus and one from subtype C consensus. We also include the number of individuals harbouring each of the HLA types.
