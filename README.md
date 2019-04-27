@@ -72,7 +72,7 @@ Associated host drug regime information for these patients is here:
   - Rdata files containing ROC curve inforamation for each method: `source_data_files/Supplementary_Figure_7.Rdata`.
   - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison.tar.gz`.
 * **Figure 8**: Simulation Study 2: impact of reduced reference sequence set, results summary.
-  -- Rdata files containing ROC curve inforamation for each method: `source_data_files/Supplementary_Figure_8.Rdata`.
+  - Rdata files containing ROC curve inforamation for each method: `source_data_files/Supplementary_Figure_8.Rdata`.
   - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison.tar.gz`.
 * **Figure 9**: Simulation Study 3: example results for HLA-A alleles.
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
@@ -84,27 +84,28 @@ Associated host drug regime information for these patients is here:
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_11.Rdata`.
   - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
 * **Figure 12**: Drug associated selection analysis: reverse transcriptase results summary.
+  - `source_data_files/Supplementary_Figure_12.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug.
   - Raw output from MCMC runs: `tarballs/reverse_transcriptase_drugs.tar.gz`.
 * **Figure 13**: Hierarchical clustering of drug selection profiles.
-  `source_data_files/Supplementary_Figure_13.Rdata` contains `drug_selection_median`; the median drug associated selection coefficients, and `trees`; native `ape` format (requires the R library `ape`) for the trees determined using `hclust`.
+  - `source_data_files/Supplementary_Figure_13.Rdata` contains `drug_selection_median`; the median drug associated selection coefficients, and `trees`; native `ape` format (requires the R library `ape`) for the trees determined using `hclust`.
 * **Figure 14**: Summary of HLA-A associated selection in protease.
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
 * **Figure 15**: Summary of HLA-B associated selection in protease.
   - `source_data_files/Supplementary_Figure_15.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
 * **Figure 16**: Summary of HLA-C associated selection in protease.
   - `source_data_files/Supplementary_Figure_16.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
 * **Figure 17**: Summary of HLA-A associated selection in reverse transcriptase.
   - `source_data_files/Supplementary_Figure_17.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Figure 18**: Summary of HLA-C associated selection in reverse transcriptase.
   - `source_data_files/Supplementary_Figure_18.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Figure 19**: Estimated recombination probabilities between sites across protease and reverse transcriptase.
   - `source_data_files/Supplementary_Figure_19.Rdata` contains the mean, median, 2.5%, 25%, 75%, and 97.5% quantiles for probability of recombination between adjacent sites in protease and reverse transcriptase, away from subtype B and subtype C consensus viral sequence.
-  - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz`.
 * **Figure 20**: The impact of HLA alleles on differentiation between HIV-1 subtypes.
   - `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus.
 
@@ -214,19 +215,19 @@ These will be small in filesize so that they may be downloaded from the journal 
   * `credible_95_reversion`: the average 95% credible interval across the 100 independent runs.
   * `credible_50_reversion`: the average 50% credible interval across the 100 independent runs.
 * **Figure 3** `source_data_files/Supplementary_Figure_3.Rdata` contains lists of information for output from simulation study 1:
-  * `closest_10_R_0` 
-  * `closest_100_R_0`
-  * `closest_10_R_0_01`
-  * `closest_100_R_0_01`
+  * `closest_10_R_0`: simulation study 1 with recombination probability set to 0 between neighbouring sites and using the closest 10 reference samples by Hamming distance.
+  * `closest_100_R_0`: simulation study 1 with recombination probability set to 0 between neighbouring sites and using the closest 100 reference samples by Hamming distance
+  * `closest_10_R_0_01`: simulation study 1 with recombination probability set to 0.01 between neighbouring sites and using the closest 100 reference samples by Hamming distance
+  * `closest_100_R_0_01`: simulation study 1 with recombination probability set to 0.01 between neighbouring sites and using the closest 100 reference samples by Hamming distance
   
   Each contains the information as in `source_data_files/Supplementary_Figure_2.Rdata`.
 * **Figure 4** `source_data_files/Supplementary_Figure_4.Rdata` contains the information as in `source_data_files/Supplementary_Figure_2.Rdata` for simulation study 1 with recombination probability set to 0.01 between neighbouring sites and using the closest 100 reference samples by Hamming distance.
 * **Figure 5** `source_data_files/Supplementary_Figure_5.Rdata` contains two lists of information for output from simulation study 1 with recombination probability set to 0.05 between neighbouring sites:
-  * `closest_100_R_0_05`
-  * `closest_100_R_0_05_actually_copied_from`
+  * `closest_100_R_0_05`: simulation study 1 with recombination probability set to 0.05 between neighbouring sites and using the closest 100 reference samples by Hamming distance
+  * `closest_100_R_0_05_actually_copied_from`: simulation study 1 with recombination probability set to 0 between neighbouring sites and using the reference sequences actually copied from to generate the query sequences.
   
   Each contains the information as in `source_data_files/Supplementary_Figure_2.Rdata`.
-* **Figure 6** 
+* **Figure 6** source_data_files/Supplementary_Figure_6.Rdata contains the information as in source_data_files/Supplementary_Figure_2.Rdata for simulation study 2 (simulating data under a birth-death process) and using the closest 100 reference samples by Hamming distance.
 * **Figure 7** `source_data_files/Supplementary_Figure_7.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 3000 leaves.
 * **Figure 8** `source_data_files/Supplementary_Figure_8.Rdata` contains the collection of ROC curves for the compared methods when simulating trees with 1460 leaves.
 * **Figure 9** `source_data_files/Supplementary_Figure_9.Rdata` contains a collection of lists:
