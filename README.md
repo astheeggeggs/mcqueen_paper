@@ -19,8 +19,7 @@ Associated host drug regime information for these patients is here:
 * **Figure 1**: The underlying process and our approximation.
   - N/A
 * **Figure 2**: Simulation results summary; Inference results for Simulation studies 1 and 2.
-  - `source_data_files/Figure_2.Rdata` is an Rdata file containing:
-    - median, mean, and quantiles displayed in Figure 2a, b and c, as well as the 100 ROC curves for each independent run using the methods detailed in the paper and the average ROC curve for each method.
+  - `source_data_files/Figure_2.Rdata` is an Rdata file containing: median, mean, and quantiles displayed in Figure 2a, b and c, as well as the 100 ROC curves for each independent run using the methods detailed in the paper and the average ROC curve for each method.
   - Raw output from MCMC runs: `tarballs/simulation_study_1/dsim_closest_100_rec_{0,0.01}.tar.gz`, `tarballs/simulations_study_2/dgen_sim_HLA_coeff.tar.gz`.
 * **Figure 3**: Drug associated selection analysis; Protease results summary.
   - `source_data_files/Figure_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug, and the median omega.
