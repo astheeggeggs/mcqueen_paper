@@ -33,21 +33,21 @@ Associated host drug regime information for these patients is here:
   - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
 
 ### Tables
-* Table 1: Data used in this study: public databases.
+* **Table 1**: Data used in this study: public databases.
   - N/A
-* Table 2: Data used in this study: viral sequence data with associated host HLA information.
+* **Table 2**: Data used in this study: viral sequence data with associated host HLA information.
   - N/A
-* Table 3: Drug associated selection analysis: sensitivity of inference.
+* **Table 3**: Drug associated selection analysis: sensitivity of inference.
   - `source_data_files/Figure_3.Rdata` and `source_data_files/Supplementary_Figure_12.Rdata` contain the 2.5%, 10% and 50% quantiles with rows labelled by drug. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 3.
   - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_drugs.tar.gz`.
-* Table 4: Overlap between sites under selection and known HLA epitopes.
+* **Table 4**: Overlap between sites under selection and known HLA epitopes.
   - `source_data_files/Figure_4.Rdata` and `source_data_files/Supplementary_Figure_14.Rdata` contain the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 4.
   - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
-* Table 5: Codons in reverse transcriptase showing evidence for HLA associated selection.
+* **Table 5**: Codons in reverse transcriptase showing evidence for HLA associated selection.
   - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
   - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
-* Table 6: Codons in protease showing evidence for HLA associated selection. 
+* **Table 6**: Codons in protease showing evidence for HLA associated selection. 
   - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.
 
 ## Supplementary Materials
