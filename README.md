@@ -2,17 +2,17 @@
 
 ## Reference datasets *D*<sub>B</sub>
 The combination of sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database, run through our quality control pipeline and used for our reference dataset at the time of performing inference is here:
-* `reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta`
+* `reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta.zip`
 
 The viral sequence data taken from the Stanford drug resistance database, run through our quality control pipeline and used for drug associated selection inference in the paper is here:
-* `reference_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+* `reference_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta.zip`
 
 ## Query datasets *D*
 The viral sequence data taken from the Stanford drug resistance database, run through our quality control pipeline and used for drug associated selection inference in the paper is here:
-* `query_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta`
+* `query_datasets/Drug_inference/{protease,reverse_transcriptase}_references.fasta.zip`
 
 Associated host drug regime information for these patients is here:
-* `csv_files/drug_regime_data/{protease,reverse_transcriptase}`
+* `csv_files/Drug_regime_data/{protease,reverse_transcriptase}_drugs.csv`
 
 ## Main Text
 ### Figures
