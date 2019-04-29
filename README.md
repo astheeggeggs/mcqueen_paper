@@ -43,11 +43,11 @@ Associated host drug regime information for these patients is here:
   - `source_data_files/Figure_4.Rdata` and `source_data_files/Supplementary_Figure_14.Rdata` contain the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 4.
   - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
 * **Table 5**: Codons in reverse transcriptase showing evidence for HLA associated selection.
-  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.
-  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
+  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
+  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.`
 * **Table 6**: Codons in protease showing evidence for HLA associated selection. 
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.`
+  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
 
 ## Supplementary Materials
 ### Figures
@@ -116,22 +116,22 @@ Associated host drug regime information for these patients is here:
 * **Table 3**: The collection of apparent false negative associations are interrogated. 
   - N/A
 * **Table 4**: The collection of top-tier and second-tier sites in protease.
-  - Raw output from MCMC run: `mcmc_output_files/protease_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/protease_combined_subtype_{B,C}_ref.Rdata`.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
+  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
 * **Table 5**: The collection of top-tier and second-tier sites in reverse transriptase.
-  - Raw output from MCMC run: `mcmc_output_files/reverse_transcriptase_combined_subtype_{B,C}_ref_combined_{window, log}.txt.zip`.
-  - Rdata file, in nicer array format, with HLA labels and removal of burn-in: `Rdata_files/HLA_inference/reverse_transcriptase_combined_subtype_{B,C}_ref.Rdata`.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/reverse_transcriptase_selection_list_all_HLA.Rdata`.
+  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
+  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Table 6**: Overlap between studies, protease.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
-  - Also, summarise where I got the Carlson information from.
+  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
+  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
 * **Table 7**: Overlap between studies, reverse transcriptase.
-  - Summary information containing the median, lower 2.5% and 10% quantile information: `Rdata_files/HLA_inference/protease_selection_list_all_HLA.Rdata`.
+  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
+  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Table 8**: Table of _p_-values for differences between _H_<sub>B</sub> and _H_<sub>C</sub>) associated selection at sites that distinguish subtype B and subtype C in protease and reverse transcriptase.
   - `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus. Labels are randomly permuted to generate the _p_-values ins Supplementary Table 8.
 * **Table 9**: Summary of reference datasets for simulation study 3.
-  - As in Supplementary Figure 9.
+  - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
+  - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
 
 ## Source datafile - to be available for download with manuscript.
 These will be small in filesize so that they may be downloaded from the journal website and provide sufficient data to recreate the various plots.
@@ -264,3 +264,16 @@ In addition, there is also `HLA_truth` which contains the true underlying select
   * `log_RT_from_C_by_subtype_B`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype B viruses.
   * `log_RT_from_C_by_subtype_C`: log base 10 of selection away from subtype C reverse transcriptase consensus by HLA frequency distribution of hosts harbouring subtype C viruses.
 We also included the collection of sites that differ between subtype B and subtype C in reverse transcriptase: `B_C_diffs_protease`, `B_C_diffs_RT`.
+
+* **Table 4**: The collection of top-tier and second-tier sites in protease.
+  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
+* **Table 5**: The collection of top-tier and second-tier sites in reverse transriptase.
+  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
+* **Table 6**: Overlap between studies, protease.
+  - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
+* **Table 7**: Overlap between studies, reverse transcriptase.
+  - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
+* **Table 8**: Table of _p_-values for differences between _H_<sub>B</sub> and _H_<sub>C</sub>) associated selection at sites that distinguish subtype B and subtype C in protease and reverse transcriptase.
+  - `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus. Labels are randomly permuted to generate the _p_-values ins Supplementary Table 8.
+* **Table 9**: Summary of reference datasets for simulation study 3.
+  - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
