@@ -20,16 +20,16 @@ Associated host drug regime information for these patients is here:
   - N/A
 * **Figure 2**: Simulation results summary; Inference results for Simulation studies 1 and 2.
   - `source_data_files/Figure_2.Rdata` is an Rdata file containing: median, mean, and quantiles displayed in Figure 2a, b and c, as well as the 100 ROC curves for each independent run using the methods detailed in the paper and the average ROC curve for each method.
-  - Raw output from MCMC runs: `tarballs/simulation_study_1/dsim_closest_100_rec_{0,0.01}.tar.gz`, `tarballs/simulations_study_2/dgen_sim_HLA_coeff.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_1/dsim_closest_100_rec_{0,0.01}.tar.gz`, `tarballs/simulations_study_2/simulation_study_2.gz`.
 * **Figure 3**: Drug associated selection analysis; Protease results summary.
   - `source_data_files/Figure_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug, and the median omega.
-  - Raw output from MCMC runs: `tarballs/protease_drugs.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/drug_inference/protease_drug_inference.tar.gz`.
 * **Figure 4**: Selected results summaries.
   - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Figure 5**:  HLA-B associated selection in reverse transcriptase.
   - `source_data_files/Figure_5.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 
 ### Tables
 * **Table 1**: Data used in this study: public databases.
@@ -38,15 +38,15 @@ Associated host drug regime information for these patients is here:
   - N/A
 * **Table 3**: Drug associated selection analysis: sensitivity of inference.
   - `source_data_files/Figure_3.Rdata` and `source_data_files/Supplementary_Figure_12.Rdata` contain the 2.5%, 10% and 50% quantiles with rows labelled by drug. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 3.
-  - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_drugs.tar.gz`.
+  - Raw output from MCMC run: `tarballs/Drug_inference/{protease,reverse_transcriptase}_drug_inference.tar.gz`.
 * **Table 4**: Overlap between sites under selection and known HLA epitopes.
   - `source_data_files/Figure_4.Rdata` and `source_data_files/Supplementary_Figure_14.Rdata` contain the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 4.
-  - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/HLA_inference/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
 * **Table 5**: Codons in reverse transcriptase showing evidence for HLA associated selection.
   - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz.`
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz.`
 * **Table 6**: Codons in protease showing evidence for HLA associated selection. 
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz.`
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz.`
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
 
 ## Supplementary Materials
@@ -75,36 +75,36 @@ Associated host drug regime information for these patients is here:
   - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison.tar.gz`.
 * **Figure 9**: Simulation Study 3: example results for HLA-A alleles.
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_3/*.tar.gz`.
 * **Figure 10**: Simulation Study 3: example results for HLA-B alleles. 
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_10.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_3/*.tar.gz`.
 * **Figure 11**: Simulation Study 3: example results for HLA-C alleles.
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_11.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_3/*.tar.gz`.
 * **Figure 12**: Drug associated selection analysis: reverse transcriptase results summary.
   - `source_data_files/Supplementary_Figure_12.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by drug.
-  - Raw output from MCMC runs: `tarballs/reverse_transcriptase_drugs.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/Drug_inference/reverse_transcriptase_drug_inference.tar.gz`.
 * **Figure 13**: Hierarchical clustering of drug selection profiles.
   - `source_data_files/Supplementary_Figure_13.Rdata` contains `drug_selection_median`; the median drug associated selection coefficients, and `trees`; native `ape` format (requires the R library `ape`) for the trees determined using `hclust`.
 * **Figure 14**: Summary of HLA-A associated selection in protease.
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz`.
 * **Figure 15**: Summary of HLA-B associated selection in protease.
   - `source_data_files/Supplementary_Figure_15.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz`.
 * **Figure 16**: Summary of HLA-C associated selection in protease.
   - `source_data_files/Supplementary_Figure_16.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in protease. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz`.
 * **Figure 17**: Summary of HLA-A associated selection in reverse transcriptase.
   - `source_data_files/Supplementary_Figure_17.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Figure 18**: Summary of HLA-C associated selection in reverse transcriptase.
   - `source_data_files/Supplementary_Figure_18.Rdata` contains the 2.5%, 10% and 50% quantiles for HLA associated selection, and median omega for inference in reverse transcriptase. We also include the number of individuals harbouring each of the HLA types.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Figure 19**: Estimated recombination probabilities between sites across protease and reverse transcriptase.
   - `source_data_files/Supplementary_Figure_19.Rdata` contains the mean, median, 2.5%, 25%, 75%, and 97.5% quantiles for probability of recombination between adjacent sites in protease and reverse transcriptase, away from subtype B and subtype C consensus viral sequence.
-  - Raw output from MCMC run: `tarballs/{protease,reverse_transcriptase}_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/{protease,reverse_transcriptase}_HLA_inference.tar.gz`.
 * **Figure 20**: The impact of HLA alleles on differentiation between HIV-1 subtypes.
   - `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus.
 
@@ -117,21 +117,21 @@ Associated host drug regime information for these patients is here:
   - N/A
 * **Table 4**: The collection of top-tier and second-tier sites in protease.
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz`.
 * **Table 5**: The collection of top-tier and second-tier sites in reverse transriptase.
   - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Table 6**: Overlap between studies, protease.
   - `source_data_files/Supplementary_Figure_14.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in protease.
-  - Raw output from MCMC run: `tarballs/protease_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/protease_HLA_inference.tar.gz`.
 * **Table 7**: Overlap between studies, reverse transcriptase.
   - `source_data_files/Figure_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
-  - Raw output from MCMC run: `tarballs/reverse_transcriptase_HLA_inference.tar.gz`.
+  - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz`.
 * **Table 8**: Table of _p_-values for differences between _H_<sub>B</sub> and _H_<sub>C</sub>) associated selection at sites that distinguish subtype B and subtype C in protease and reverse transcriptase.
   - `source_data_files/Supplementary_Figure_20.Rdata` contains estimates of HLA frequency weighted selection away from subtype B and subtype C viral consensus. Labels are randomly permuted to generate the _p_-values ins Supplementary Table 8.
 * **Table 9**: Summary of reference datasets for simulation study 3.
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulations_study_3/sim_parametric_bootstrap.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_3/*.tar.gz`.
 
 ## Source datafile - to be available for download with manuscript.
 These will be small in filesize so that they may be downloaded from the journal website and provide sufficient data to recreate the various plots.
