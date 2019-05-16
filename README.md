@@ -36,10 +36,9 @@ Associated host drug regime information for these patients is here:
   - N/A
 * **Table 2**: Data used in this study: viral sequence data with associated host HLA information.
   - N/A
-  - Raw output from MCMC run: `tarballs/Drug_inference/{protease,reverse_transcriptase}_drug_inference.tar.gz`.
 * **Table 3**: Overlap between sites under selection and known HLA epitopes.
   - `source_data_files/Table_3.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA for protease and reverse transcriptase. These are used to define top-tier and second tier candidate sites, permutation of labels leads to the _p_-values and odds ratios observed in Table 3.
-  - Raw output from MCMC run: `tarballs/HLA_inference/{protease,reverse_transcriptase}_HLA_inference.tar.gz.
+  - Raw output from MCMC run: `tarballs/HLA_inference/{protease,reverse_transcriptase}_HLA_inference.tar.gz`.
 * **Table 4**: Codons in reverse transcriptase showing evidence for HLA associated selection.
   - `source_data_files/Table_4.Rdata` contains the 2.5%, 10% and 50% quantiles with rows labelled by HLA. These are used to define top-tier and second tier candidate sites in reverse transcriptase.
   - Raw output from MCMC run: `tarballs/HLA_inference/reverse_transcriptase_HLA_inference.tar.gz.`
