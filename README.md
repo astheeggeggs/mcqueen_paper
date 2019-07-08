@@ -1,5 +1,12 @@
 # Raw data and MCMC output underlying plots and results in the McQueen paper
 
+## The large tarballs are now also available on Dropbox
+* drug_inference (all `tar.gz` files present in `tarballs/drug_inference/`)
+* HLA_inference (all `tar.gz` files present in `tarballs/HLA_inference/`)
+* simulation_study_1 (all `tar.gz` files present in `tarballs/simulation_study_1/`)
+* simulation_study_2 (all `tar.gz` files present in `tarballs/simulation_study_2/`)
+* simulation_study_3 (all `tar.gz` files present in `tarballs/simulation_study_3/`)
+
 ## Reference datasets *D*<sub>B</sub>
 The combination of sequence data from the Los Alamos HIV sequence database, the Stanford drug resistance database and the HIV positive selection database, run through our quality control pipeline and used for our reference dataset at the time of performing inference is here:
 * `reference_datasets/HLA_inference/combined_{protease,reverse_transcriptase}_references.fasta.zip`
