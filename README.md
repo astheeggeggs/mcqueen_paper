@@ -1,7 +1,6 @@
 # Raw data and MCMC output underlying plots and results in the McQueen paper
 
-## The large tarballs are now also available on Dropbox:
-https://www.dropbox.com/sh/dw4l84hz84xo2k5/AACw99Kp9wJt8p1uD8NPgV_ya?dl=0
+## The large tarballs are now also available on Dropbox [here](https://www.dropbox.com/sh/dw4l84hz84xo2k5/AACw99Kp9wJt8p1uD8NPgV_ya?dl=0).
 
 The file structure is identical to the github repository `tarballs` folder.
 
