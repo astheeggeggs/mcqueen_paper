@@ -70,10 +70,10 @@ Associated host drug regime information for these patients is here:
   - Rdata file containing median, mean, and quantiles displayed: `source_data_files/Supplementary_Figure_6.Rdata`.
 * **Figure 7**: Simulation Study 2: sample size of 3000, results summary.
   - Rdata files containing ROC curve inforamation for each method: `source_data_files/Supplementary_Figure_7.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison/3000_leaves/*.tar.gz`.
 * **Figure 8**: Simulation Study 2: impact of reduced reference sequence set, results summary.
   - Rdata files containing ROC curve inforamation for each method: `source_data_files/Supplementary_Figure_8.Rdata`.
-  - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison.tar.gz`.
+  - Raw output from MCMC runs: `tarballs/simulation_study_2/dgen_sim_HLA_coeff_1460_3000_comparison/1460_leaves/*.tar.gz`.
 * **Figure 9**: Simulation Study 3: example results for HLA-A alleles.
   - Rdata file containing median information, coverage and RMSE for each of the different reference datasets used: `source_data_files/Supplementary_Figure_9.Rdata`.
   - Raw output from MCMC runs: `tarballs/simulation_study_3/*.tar.gz`.
